@@ -1,0 +1,317 @@
+/* -------------------------------------------- Header ------------------------------- */
+html, #body-index {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#body-index {
+  background-image: url('../images/Estadio.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#logo {
+  width: 10%;
+  height: auto;
+  border-radius: 8px;
+  margin: 0;
+  transition: transform 0.3s ease-in;
+}
+
+#logo:hover {
+  transform: scale(1.1);
+}
+
+/* #logo-link {
+    width: fit-content;
+} */
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+#nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-content {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.3s ease-in;
+}
+
+.menu-content:hover {
+  text-decoration: underline blue;
+  /* TBD */
+  transform: scale(1.2);
+}
+
+#current-page {
+  color: rgb(0, 221, 255);
+}
+
+/*---------------------------------- Index ----------------------------------- */
+
+.page-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* With this we avoid that the footer move up if the main does not exist */
+}
+
+main {
+  flex: 1;
+}
+
+#welcome-message {
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px 40px;
+  border-radius: 12px;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+#next-game {
+  position: relative;
+  margin: 210px auto 40px;
+  max-width: 700px;
+  padding: 15px 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.2em;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+#next-game .team-photo {
+  width: 60px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+#next-game .match-text {
+  white-space: nowrap;
+}
+
+#information {
+  position: relative;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px 40px;
+  border-radius: 12px;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+/* --------------------------------------------------- Tables ----------------------------------------- */
+#table-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 5% auto;
+}
+
+#lineup table {
+  width: 100%;
+  max-width: 450px;
+  margin: auto 20%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 0.95em;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+#lineup thead {
+  background-color: #0a1a2f;
+}
+
+#lineup thead th {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+}
+
+#lineup tbody td {
+  padding: 8px 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#lineup thead tr:first-child th {
+  background-color: #001f3f;
+  font-size: 1.2em;
+  padding: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#lineup tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#lineup tbody tr:hover {
+  background-color: rgba(0, 102, 204, 0.15);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+#standings table {
+  width: 100%;
+  max-width: 500px;
+  margin: auto 57%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 0.95em;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+#standings thead tr:first-child th {
+  background-color: #001f3f;
+  font-size: 1.3em;
+  padding: 15px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  border-bottom: 2px solid #0a1a2f;
+}
+
+#standings thead tr:nth-child(2) th {
+  background-color: #0a1a2f;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  border-bottom: 2px solid #001f3f;
+}
+
+#standings tbody td {
+  padding: 8px 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#standings tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#standings tbody tr:hover {
+  background-color: rgba(0, 102, 204, 0.15);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.team-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  padding-left: 12px;
+}
+
+.team-name img {
+  width: 30px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+/* --------------------------------- Footer ----------------------------------------------- */
+#footer {
+  background-color: #222;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-content img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.footer-content img:hover {
+  transform: scale(1.2);
+}
+
+.company-info,
+.legal {
+  font-size: 0.9em;
+}
+
+.legal a {
+  color: white;
+  text-decoration: none;
+}
+
+.legal a:hover {
+  text-decoration: underline;
+}
