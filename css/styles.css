@@ -388,7 +388,8 @@ main {
   font-weight: bold;
 }
 
-.form-container input, .form-container textarea {
+.form-container input,
+.form-container textarea {
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -396,7 +397,8 @@ main {
   font-size: 1em;
 }
 
-.form-container input:focus, .form-container textarea:focus {
+.form-container input:focus,
+.form-container textarea:focus {
   outline: none;
   border: 1px solid #00ddff;
   box-shadow: 0 0 5px #00ddff;
@@ -483,8 +485,55 @@ main {
   transform: scale(1.1);
   background-color: #00b8d4;
 }
-
 /* ------------------------------------------- End Purchase Confirmation -------------------------- */
+
+/* ---------------------------------------------- Contacto ------------------------------------- */
+#contact-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 30px;
+  margin-top: 5%;
+}
+
+#map-container {
+  margin: auto 2%;
+  flex: 1 1 400px;
+  max-width: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+}
+
+#map-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+#contact-info {
+  width: 25%;
+  margin: auto;
+  font-size: 1em;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+  line-height: 1.5;
+}
+
+#contact-info h1 {
+  color: #001f3f;
+}
+
+#contact-info strong {
+  color: #001f3f;
+  font-size: larger;
+}
+/* ----------------------------------------------- End Contacto --------------------------------------- */
 
 /* --------------------------------- Footer ----------------------------------------------- */
 #footer {
@@ -520,7 +569,8 @@ main {
   transform: scale(1.2);
 }
 
-.company-info, .legal {
+.company-info,
+.legal {
   font-size: 0.9em;
 }
 
@@ -532,4 +582,5 @@ main {
 .legal a:hover {
   text-decoration: underline;
 }
+
 /* ---------------------------------------------------------------- End Footer ---------------------------------------- */
