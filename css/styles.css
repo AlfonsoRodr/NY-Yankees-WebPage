@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 /* -------------------------------------------- Header ------------------------------- */
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
   display: flex;
@@ -18,6 +17,7 @@ body {
 }
 
 #logo {
+  display: block;
   width: 10%;
   height: auto;
   border-radius: 8px;
@@ -28,10 +28,6 @@ body {
 #logo:hover {
   transform: scale(1.1);
 }
-
-/* #logo-link {
-    width: fit-content;
-} */
 
 header {
   display: flex;
@@ -360,6 +356,106 @@ main {
 
 /* ---------------------------------------------- End Index ------------------------------------------------ */
 
+/* ----------------------------------------------- Galería ------------------------------------------------ */
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#stadium-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+}
+
+#stadium-gallery h4 {
+  grid-column: 1 / -1;
+  color: #00ddff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#stadium-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+}
+
+#stadium-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 221, 255, 0.8);
+}
+
+#position-players-gallery, #pitchers-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+}
+
+#position-players-gallery h4, #pitchers-gallery h4 {
+  grid-column: 1 / -1;
+  color: #00ddff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#position-players-gallery img, #pitchers-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+}
+
+#position-players-gallery img:hover, #pitchers-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 221, 255, 0.8);
+}
+
+.player-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px; /* Space Between the photo and the palyer`s name */
+}
+
+.player-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  color: #00ddff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 4px 8px;
+  border-radius: 8px;
+  width: fit-content;
+}
+/* ----------------------------------------------- End Galería ------------------------------------------- */
+
 /* ---------------------------------------------- Presupuesto ------------------------------------------- */
 .form-container {
   background-color: rgba(0, 0, 0, 0.7);
@@ -388,8 +484,7 @@ main {
   font-weight: bold;
 }
 
-.form-container input,
-.form-container textarea {
+.form-container input, .form-container textarea {
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -397,8 +492,7 @@ main {
   font-size: 1em;
 }
 
-.form-container input:focus,
-.form-container textarea:focus {
+.form-container input:focus, .form-container textarea:focus {
   outline: none;
   border: 1px solid #00ddff;
   box-shadow: 0 0 5px #00ddff;
@@ -569,8 +663,7 @@ main {
   transform: scale(1.2);
 }
 
-.company-info,
-.legal {
+.company-info, .legal {
   font-size: 0.9em;
 }
 
@@ -582,5 +675,4 @@ main {
 .legal a:hover {
   text-decoration: underline;
 }
-
 /* ---------------------------------------------------------------- End Footer ---------------------------------------- */
