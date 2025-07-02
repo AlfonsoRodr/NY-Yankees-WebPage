@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Alfonso Rodríguez">
-    <title>Entradas</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="shortcut icon" href="../images/Logo.png" type="image/x-icon" /> <!-- Window Icon-->
+    <title>Purchase Confirmation</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/png" href="../images/Logo.png">
 </head>
 
-<body>
+<body class="title-container">
     <div class="page-wrapper">
         <header>
             <a id="logo-link" href="../index.html" class="logo-link">
@@ -25,29 +26,12 @@
             </nav>
         </header>
 
-        <main>
-            <section class="form-container">
-                <h4>Solicita Tu Entrada</h4>
-                <form action="confirmación-compra.html" method="get">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" placeholder="Fulanito" autofocus required>
-                    <label for="apellidos">Apellidos:</label>
-                    <input type="text" name="apellidos" placeholder="García Marquez" required>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" placeholder="miemail@gmail.com" required>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" name="telefono" pattern="^\d+$" required>
-                    <label for="informacion-adicional">Información Adicional:</label>
-                    <textarea name="informacion-adicional" cols="40" rows="10" placeholder="Escriba cualquier información adicional que considere pertinente"></textarea>
-                    <div id="checkbox-container">
-                        <input type="checkbox" name="privacy" required>
-                        <label for="privacy">
-                            Acepto la Política de Privacidad
-                        </label>
-                    </div>
-                    <button type="submit">Confirmar</button>
-                </form>
-            </section> 
+        <main id="main-confirmation">
+            <div class="confirmation-container">
+                <h1>¡Muchas Gracias por tu Compra!</h1>
+                <p>¡Esperamos que disfrutes mucho de tu entrada y de la experiencia!</p>
+                <a href="../index.html">Volver al Inicio</a>
+            </div>
         </main>
 
         <footer id="footer">
