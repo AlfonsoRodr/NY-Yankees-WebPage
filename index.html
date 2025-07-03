@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Author" content="Alfonso Rodríguez" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Alfonso Rodríguez">
     <title>Home</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon" /> <!-- Window Icon-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon"> <!-- Window Icon-->
 
 </head>
 
@@ -15,7 +15,7 @@
     <div class="page-wrapper">
         <header>
             <a href="./index.html" title="Home">
-                <img id="logo" src="./images/Logo.png" alt="Yankees Logo" width="500" height="500" />
+                <img id="logo" src="./images/Logo.png" alt="Yankees Logo" width="500" height="500">
             </a>
             <nav>
                 <ul id="nav-list">
@@ -34,14 +34,15 @@
             </div>
 
             <section id="next-game">
-                <img class="team-photo" src="./images/Logo.png" alt="Visit Team" width="500" height="500" />
-                <span class="match-text">
-                    Yankees at Blue Jays
-                    <div>
-                        (01/07 - 9:07 PM GMT + 2:00)
-                    </div>
-                </span>
-                <img class="team-photo" src="./images/Toronto.png" alt="Local Team" width="500" height="500" />
+                <h2 hidden>Título Next Game</h2>
+                <img class="team-photo" src="./images/Logo.png" alt="Visit Team" width="500" height="500">
+
+                <div class="match-info">
+                    <span class="match-text">Yankees at Blue Jays</span>
+                    <div class="match-date">(01/07 - 9:07 PM GMT + 2:00)</div>
+                </div>
+
+                <img class="team-photo" src="./images/Toronto.png" alt="Local Team" width="500" height="500">
             </section>
 
             <div id="information-container">
@@ -54,7 +55,8 @@
                         (MLB)
                         y tienen su sede en el Bronx, Nueva York.
                         A lo largo de su historia, han ganado <strong>27 Series Mundiales, la mayor cantidad en la
-                        MLB,</strong>y han contado con leyendas como Babe Ruth, Lou Gehrig, Joe DiMaggio, Mickey Mantle y 
+                            MLB,</strong>y han contado con leyendas como Babe Ruth, Lou Gehrig, Joe DiMaggio, Mickey
+                        Mantle y
                         Derek Jeter.
                         Su estadio actual, <strong>el Yankee Stadium,</strong> inaugurado en 2009, es un símbolo del
                         legado deportivo y cultural
@@ -64,9 +66,10 @@
 
                 <section id="rivalries">
                     <ul class="rivalries-list">
-                        <h4>Mayores Rivalidades</h4>
+                        <h4>Mayores Rivalidades</h4> <!-- I'm aware that this triggers a W3C validation error, 
+                        but removing it would compromise the layout of this section.-->
                         <li>
-                            <img src="./images/Boston.png" alt="Boston Red Sox" width="352" height="426" />
+                            <img src="./images/Boston.png" alt="Boston Red Sox" width="352" height="426">
                             <div>
                                 <strong>Boston Red Sox</strong>
                                 <p>La rivalidad más intensa y conocida, marcada por la leyenda de la “Maldición del
@@ -74,7 +77,7 @@
                             </div>
                         </li>
                         <li>
-                            <img src="./images/Mets.png" alt="New York Mets" width="250" height="250" />
+                            <img src="./images/Mets.png" alt="New York Mets" width="250" height="250">
                             <div>
                                 <strong>New York Mets</strong>
                                 <p>Clásico duelo neoyorquino que divide la ciudad y enfrenta a los dos equipos más
@@ -82,7 +85,7 @@
                             </div>
                         </li>
                         <li>
-                            <img src="./images/Dodgers.png" alt="Los Angeles Dodgers" width="4096" height="4096" />
+                            <img src="./images/Dodgers.png" alt="Los Angeles Dodgers" width="4096" height="4096">
                             <div>
                                 <strong>Los Angeles Dodgers</strong>
                                 <p>Rivalidad histórica con múltiples enfrentamientos decisivos en la Serie Mundial y un
@@ -90,7 +93,7 @@
                             </div>
                         </li>
                         <li>
-                            <img src="./images/Astros.png" alt="Houston Astros" width="1200" height="1203" />
+                            <img src="./images/Astros.png" alt="Houston Astros" width="1200" height="1203">
                             <div>
                                 <strong>Houston Astros</strong>
                                 <p>Rivalidad reciente pero intensa, destacando choques en postemporada que han elevado
@@ -98,7 +101,7 @@
                             </div>
                         </li>
                         <li>
-                            <img src="./images/Toronto.png" alt="Toronto Blue Jays" width="500" height="500" />
+                            <img src="./images/Toronto.png" alt="Toronto Blue Jays" width="500" height="500">
                             <div>
                                 <strong>Toronto Blue Jays</strong>
                                 <p>Competencia divisional que se ha vuelto más relevante en las últimas temporadas por
@@ -112,14 +115,17 @@
 
             <div id="table-container">
                 <section id="lineup">
+                    <h2 hidden>Titulo Lineup</h2>
                     <table>
                         <thead>
                             <tr>
                                 <th colspan="3">Alineación Titular NY Yankees</th>
                             </tr>
-                            <th>Nº</th>
-                            <th>Nombre</th>
-                            <th>Posición</th>
+                            <tr>
+                                <th>Nº</th>
+                                <th>Nombre</th>
+                                <th>Posición</th>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>
@@ -177,6 +183,7 @@
                 </section>
 
                 <section id="standings">
+                    <h2 hidden>Titulo Clasifiación</h2>
                     <table>
                         <thead>
                             <tr>
@@ -197,7 +204,7 @@
                             <tr>
                                 <td>1</td>
                                 <td class="team-name">
-                                    <img src="images/Logo.png" alt="Yankees" width="500" height="500" />
+                                    <img src="images/Logo.png" alt="Yankees" width="500" height="500">
                                     New York Yankees
                                 </td>
                                 <td>84</td>
@@ -210,7 +217,7 @@
                             <tr>
                                 <td>2</td>
                                 <td class="team-name">
-                                    <img src="images/Tampa.png" alt="Rays" width="4096" height="4096" />
+                                    <img src="images/Tampa.png" alt="Rays" width="4096" height="4096">
                                     Tampa Bay Rays
                                 </td>
                                 <td>85</td>
@@ -223,7 +230,7 @@
                             <tr>
                                 <td>3</td>
                                 <td class="team-name">
-                                    <img src="images/Toronto.png" alt="Blue Jays" width="500" height="500" />
+                                    <img src="images/Toronto.png" alt="Blue Jays" width="500" height="500">
                                     Toronto Blue Jays
                                 </td>
                                 <td>84</td>
@@ -236,7 +243,7 @@
                             <tr>
                                 <td>4</td>
                                 <td class="team-name">
-                                    <img src="images/Boston.png" alt="Red Sox" width="500" height="426" />
+                                    <img src="images/Boston.png" alt="Red Sox" width="500" height="426">
                                     Boston Red Sox
                                 </td>
                                 <td>86</td>
@@ -249,7 +256,7 @@
                             <tr>
                                 <td>5</td>
                                 <td class="team-name">
-                                    <img src="images/Baltimore.png" alt="Orioles" width="500" height="500" />
+                                    <img src="images/Baltimore.png" alt="Orioles" width="500" height="500">
                                     Baltimore Orioles
                                 </td>
                                 <td>84</td>
@@ -269,13 +276,13 @@
             <div class="footer-content">
                 <div class="social-media">
                     <a href="https://www.facebook.com" target="_blank" title="Facebook">
-                        <img src="./images/Facebook.png" alt="Facebook" width="2143" height="2143" />
+                        <img src="./images/Facebook.png" alt="Facebook" width="2143" height="2143">
                     </a>
                     <a href="https://www.twitter.com" target="_blank" title="Twitter">
-                        <img src="./images/Twitter.png" alt="Twitter" width="600" height="600" />
+                        <img src="./images/Twitter.png" alt="Twitter" width="600" height="600">
                     </a>
                     <a href="https://www.instagram.com" target="_blank" title="Instagram">
-                        <img src="./images/Instagram.png" alt="Instagram" width="1200" height="1200" />
+                        <img src="./images/Instagram.png" alt="Instagram" width="1200" height="1200">
                     </a>
                 </div>
 

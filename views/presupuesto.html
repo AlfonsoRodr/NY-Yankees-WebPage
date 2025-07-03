@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Alfonso Rodríguez">
     <title>Entradas</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="shortcut icon" href="../images/Logo.png" type="image/x-icon" /> <!-- Window Icon-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../images/Logo.png" type="image/x-icon"> <!-- Window Icon-->
 </head>
 
 <body>
     <div class="page-wrapper">
         <header>
             <a href="../index.html" title="Home">
-                <img id="logo" src="../images/Logo.png" alt="Yankees Logo" width="500" height="500" />
+                <img id="logo" src="../images/Logo.png" alt="Yankees Logo" width="500" height="500">
             </a>
             <nav>
                 <ul id="nav-list">
@@ -31,17 +31,18 @@
                 <h4>Solicita Tu Entrada</h4>
                 <form action="confirmación-compra.html" method="get">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" placeholder="Fulanito" autofocus required>
+                    <input type="text" id="nombre" name="nombre" placeholder="Fulanito" pattern="[A-Za-z]+" autofocus required>
                     <label for="apellidos">Apellidos:</label>
-                    <input type="text" name="apellidos" placeholder="García Marquez" required>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="García Marquez" pattern="[A-Za-z \t]+" required>
                     <label for="email">Email:</label>
-                    <input type="email" name="email" placeholder="miemail@gmail.com" required>
+                    <input type="email" id="email" name="email" placeholder="miemail@gmail.com" required> <!-- Since the type is email, 
+                    there is no sense to establish a pattern here, since the verification is done without it-->
                     <label for="telefono">Teléfono:</label>
-                    <input type="tel" name="telefono" pattern="^\d+$" required>
+                    <input type="tel" id="telefono" name="telefono" pattern="^\d+$" required>
                     <label for="informacion-adicional">Información Adicional:</label>
-                    <textarea name="informacion-adicional" cols="40" rows="10" placeholder="Escriba cualquier información adicional que considere pertinente"></textarea>
+                    <textarea id="informacion-adicional" name="informacion-adicional" cols="40" rows="10" placeholder="Escriba cualquier información adicional que considere pertinente"></textarea>
                     <div id="checkbox-container">
-                        <input type="checkbox" name="privacy" required>
+                        <input id="privacy" type="checkbox" name="privacy" required>
                         <label for="privacy">
                             Acepto la Política de Privacidad
                         </label>
@@ -55,13 +56,13 @@
             <div class="footer-content">
                 <div class="social-media">
                     <a href="https://www.facebook.com" target="_blank" title="Facebook">
-                        <img src="../images/Facebook.png" alt="Facebook" width="2143" height="2143" />
+                        <img src="../images/Facebook.png" alt="Facebook" width="2143" height="2143">
                     </a>
                     <a href="https://www.twitter.com" target="_blank" title="Twitter">
-                        <img src="../images/Twitter.png" alt="Twitter" width="600" height="600" />
+                        <img src="../images/Twitter.png" alt="Twitter" width="600" height="600">
                     </a>
                     <a href="https://www.instagram.com" target="_blank" title="Instagram">
-                        <img src="../images/Instagram.png" alt="Instagram" width="1200" height="1200" />
+                        <img src="../images/Instagram.png" alt="Instagram" width="1200" height="1200">
                     </a>
                 </div>
 
